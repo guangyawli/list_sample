@@ -1,4 +1,5 @@
 # This is a sample Python script.
+from itertools import count
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
@@ -40,8 +41,26 @@ def list_sample():
     demolist.remove('芭樂')
     print(demolist)
 
+    print()
+    #清除 list
+    demolist.clear()
+    print('以 clear() 移除元素 :')
+    print(demolist)
+
+    if demolist :
+        print('demolist is not empty')
+    else:
+        print('demolist is empty')
+
     # 刪除串列 del
+    print()
     del demolist
+    print('以 del 移除list :')
+    try:
+        demolist
+    except NameError:
+        print('demolist is not exist')
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
