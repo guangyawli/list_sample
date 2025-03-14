@@ -42,6 +42,10 @@ def list_sample():
     print(demolist)
 
     print()
+    print('以 count 計算元素  芭樂 在串列中出現幾次:')
+    print(demolist.count('芭樂'))
+
+    print()
     #清除 list
     demolist.clear()
     print('以 clear() 移除元素 :')
